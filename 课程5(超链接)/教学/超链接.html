@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>超链接</title>
+  <style>
+    .box {
+      height: 2000px;
+    }
+    h2 {
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 超链接，就是点击跳转其他页面,有外部链接,和本地连接两种跳转 -->
+  <!-- 外部连接就是外部得页面,本地连接就是本地得html文件.地址可以写相对路径也可以写绝对路径,这句话要重点记忆 -->
+  <!-- a标签实现 -->
+  <!-- target属性: _self 原来窗口跳转  _blank 新窗口打开  -->
+  <a href='http://www.baidu.com' target="_self">百度</a>
+
+  <!-- 锚点连接,点击会跳转到当前页面得一部分 -->
+  <a href='#yr'>严胖胖</a>
+  <div class="box"></div>
+  <h2 id='yr'>我是严胖胖</h2>
+
+</body>
+
+</html>
