@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>边框样式</title>
+  <style>
+    .yr {
+      /* 一般我们使用边框缩写如下，第一个是边框宽，第二个是边框类型，有none、dashed虚线、solid实线，第三个边框颜色，颜色的几种取值方式都可以 */
+      border: 1px solid red;
+    }
+
+    .yr-top {
+      /* 上边框 */
+      border-top: 1px solid yellow;
+    }
+
+    .yr-bottom {
+      /* 下边框 */
+      border-bottom: 5px dashed #efefef;
+    }
+
+    .yr-left {
+      /* 左边框 */
+      border-left: 1px solid rgb(245, 22, 25);
+    }
+
+    .yr-right {
+      /* 右边框 */
+      border-right: 1px solid blue;
+    }
+
+    div {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="yr">我是严胖胖</div>
+  <div class="yr-top">我是严胖胖</div>
+  <div class="yr-bottom">我是严胖胖</div>
+  <div class="yr-left">我是严胖胖</div>
+  <div class="yr-right">我是严胖胖</div>
+</body>
+
+</html>
