@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>超链接样式</title>
+  <style>
+    /* 定义a元素未访问时的样式 */
+    .yr-a:link {
+      color: blue;
+    }
+
+    /* 定义a元素访问后的样式 */
+    .yr-a:visited {
+      color: red;
+    }
+
+    /* 定义鼠标经过a元素时的样式, 最常用的 */
+    /* hover伪类不仅可以用在a标签，也可以用在其他标签，自己去试试 */
+    .yr-a:hover {
+      color: green;
+    }
+
+    /* 定义鼠标点击激活时的样式 */
+    .yr-a:active {
+      color: yellow;
+    }
+
+    .yr-a {
+      /* cursor: 鼠标样式,常用的就3个,defalut默认,pointer小手指,text输入符,其他感兴趣自己去看 */
+      /* 也可以使用自定义图片,cursor: url(图片地址), 属性值;图片要用.cur后缀 */
+      cursor: pointer;
+
+      /* 去掉下划线 */
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="yr-a" href='http://www.439.com'>去玩游戏</a>
+</body>
+
+</html>

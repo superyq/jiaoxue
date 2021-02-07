@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>背景样式</title>
+  <style>
+    .yr-bgcolor,
+    .yr-bgimg {
+      /* width,height设置容器的宽高，这样背景才会显示出来 */
+      width: 500px;
+      height: 200px;
+      border: 1px solid;
+      margin-bottom: 20px;
+    }
+
+    /* 背景色 */
+    .yr-bgcolor {
+      background-color: green;
+    }
+
+    /* 背景图 */
+    .yr-bgimg {
+      /* background有缩写的方式，但是不建议，因为你缩写之后，是计算机帮你拆解出来，浪费时间，直接写拆开写 */
+
+      /* 图片地址， url(图片地址)，可以绝对路径，可以相对路径 */
+      background-image: url("../../../html/课程4\(图片\)/assets/1.jpg");
+
+      /* 图片是否平铺，也就是复制，比如你的图片大小只有100 * 100，但是你的盒子有500 * 500，那么你的图片就小了，图片就会默认复制铺满容器，你可以试试。 */
+      /* repeat 在水平方向和垂直方向上同时平铺（默认值）、repeat-x	只在水平方向（x轴）上平铺、repeat-y	只在垂直方向（y轴）上平铺、no-repeat	不平铺 */
+      background-repeat: no-repeat;
+
+      /* background-position: 水平距离 垂直距离;也可以使用关建字，比如水平就用left/right，上下就用top/bottom，水平上下都可以用center */
+      background-position: 40px 20px;
+
+      /* background-attachment属性来定义背景图片是随元素一起滚动还是固定不动， 去页面上下滚动试试*/
+      /* scroll	随元素一起滚动（默认值）
+      fixed	固定不动 */
+      background-attachment: fixed;
+      
+      /* background-size: 宽 高/关键字; 宽高可以是百分比或者像素，关键字：cover保持图片比例覆盖成盒子最小的大小、contain保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小。 */
+      background-size: cover;
+    }
+    .box {
+      height: 1000px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="yr-bgcolor"></div>
+  <div class="yr-bgimg">
+  </div>
+  <div class="box"></div>
+</body>
+
+</html>
