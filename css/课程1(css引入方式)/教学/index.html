@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 外部样式：rel='stylesheet' 表示引入文件是一个样式表文件，type='text/css' 表示这是一个标准css, href='css路径' 路径可以是相对路径也可以是绝对路径 -->
+  <link rel='stylesheet' type='text/css' href="./index.css" />
+
+  <!-- 内部样式 -->
+  <style>
+    .yq {
+      color: red;
+    }
+  </style>
+  <title>引入方式</title>
+
+</head>
+
+<body>
+  <!-- css引入方式3种: 外部样式、内部样式、行内样式 -->
+  <!-- 外部样式是我们最常用得，因为可以把样式提取出来，在不同得项目里面使用 -->
+  <!-- 内部样式是单页面css很少时候，可以使用，就懒得再创建一个css文件了 -->
+  <!-- 行内样式是当你统一设置一种元素得样式时候，有一个元素样式不同就可以使用行内元素 -->
+  <!-- 样式优先级是，行内样式>内部样式>外部样式，优先级得意思是，当你行内样式设置了颜色，那么你得外部样式和内部样式设置得颜色，就会失效，自己去试试 -->
+  <b class="yr">严胖胖</b>
+  
+  <b class="yq">杨大爷</b>
+
+  <!-- 行内样式 -->
+  <b class="bob" style='color: yellow'>bob</b>
+</body>
+
+</html>

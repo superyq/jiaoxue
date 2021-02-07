@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css选择器</title>
+  <style>
+    /* 元素选择器 */
+    p {
+      color: yellow;
+    }
+
+    /* class选择器前面加.：可以有重复的class，比如人的名字 */
+    .yr {
+      color: green;
+    }
+
+    /* id选择器前面加#号：不可以重复，比如人的身份证 */
+    #yq {
+      color: red;
+    }
+
+    /* 后代选择器 */
+    .yr b {
+      font-size: 24px;
+    }
+
+    /* 群主选择器：必须用逗号隔开 */
+    .yr, p, #yq {
+      font-weight: bold;
+      font-style: oblique;
+    }
+  </style>
+</head>
+<body>
+  <!-- 选择器是什么，举例就是，你要改变一个元素的样式，那么你要先选中这个元素，然后再去给它赋值样式 -->
+  <!-- 五种选中器：元素、id、class、后代、群主 -->
+  <div class="yr">
+    严胖胖
+    <b>是大胖子</b>
+  </div>
+  <p>bob</p>
+  <span id='yq'>杨大爷</span>
+</body>
+</html>
