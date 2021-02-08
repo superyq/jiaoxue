@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位布局</title>
+  <style>
+    .box-fixed {
+      /* 固定定位，top、bottom、left和right这4个属性不一定全部都用到，一般只会用到其中两个，就是盒子距离浏览器四边的距离 */
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+    .box {
+      height: 1000px;
+    }
+
+    .box-relative {
+      /* 相对定位,使用同上 */
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+
+    .box-absolute {
+      /* 设置相对定位 */
+      position: relative;
+
+      width: 200px;
+      height: 200px;
+      margin-top: 60px;
+      border: 1px solid;
+    }
+
+    .box-absolute b {
+      /* 绝对定位，它的父级一般要设置position:relative这样，他的定位就是相对于父级的四个边框来的 */
+      position: absolute;
+      
+      bottom: 0;
+      right: 0;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- 定位布局通过position属性来实现， -->
+  <!-- fixed固定定位: 指的是被固定的元素不会随着滚动条的拖动而改变位置。-->
+  <!-- relative相对定位: 指的是该元素的位置是相对于它的原始位置计算而来的 -->
+  <!-- absolute绝对定位：使用最为广泛的定位，一个元素变成了绝对定位元素，这个元素就完全脱离文档流了，绝对定位元素的前面或后面的元素会认为这个元素并不存在，此时这个元素浮于其他元素上面，已经完全独立出来了。 -->
+  <!-- static静态定位（默认值） -->
+
+  <div class="box-relative">
+    严胖胖，这个是相对定位
+  </div>
+
+  <div class="box-absolute">
+    <b>严胖胖，这个是绝对定位</b>
+  </div>
+
+  <div class="box-fixed">
+    严胖胖，这个是固定定位
+  </div>
+  <div class="box"></div>
+</body>
+
+</html>
