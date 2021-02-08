@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动布局</title>
+  <style>
+    /* 下面的css，我只解释之前没写过的，教过的不再解释 */
+    .box {
+      border: 1px solid;
+      margin-bottom: 20px;
+    }
+
+    .box-wrapper {
+      background: blue;
+    }
+
+    .box2 {
+      margin-right: 20px;
+      background: red;
+
+      /* float属性取值只有2个：left左浮动、right右浮动 */
+      float: left;
+    }
+
+    .box3 {
+      background: yellow;
+      float: left;
+    }
+
+    .box-img {
+      margin: 60px 0 20px;
+      width: 300px;
+      height: 400px;
+      border: 1px solid;
+    }
+
+    .box-img img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      float: left;
+    }
+
+    .clear {
+      /* 浮动会影响周围元素,直接使用clear:both来清除该元素的兄弟元素浮动带来的影响 */
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 学习这章你要知道什么是文档流，文档流就是指元素在页面中出现的先后顺序 -->
+
+  <!-- 正常文档流，指的就是默认情况下页面元素的布局情况。 -->
+  <!-- 脱离文档流，要使用，浮动或定位 -->
+
+  <!-- 理解一下我的class为什么要这样命名 -->
+  <div class="box box1">严胖胖，div是一个块级元素，正常情况要独自占一行</div>
+
+  <div class="box-wrapper">
+    <div class="box box2">严胖胖，div是一个块级元素，正常情况要独自占一行</div>
+    <div class="box box3">严胖胖，div是一个块级元素，正常情况要独自占一行</div>
+    <div class="clear"></div>
+  </div>
+
+  <!-- 利用浮动，实现文字环绕图片 -->
+  <div class="box-img">
+    <img src="../../../html/课程4(图片)/assets/1.jpg">
+    <p>
+      这是内容，你看啥看，看啥看，严胖胖这是内容，你看啥看，看啥看，严胖胖这是内容，你看啥看，看啥看，严胖胖这是内容，你看啥看，看啥看，严胖胖这是内容，你看啥看，看啥看，严胖胖这是内容，你看啥看，看啥看，严胖胖这是内容，你看啥看，看啥看，严胖胖
+    </p>
+  </div>
+
+</body>
+
+</html>
